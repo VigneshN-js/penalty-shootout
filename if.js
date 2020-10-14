@@ -1,0 +1,2 @@
+var name="ram";
+conso

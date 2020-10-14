@@ -15,9 +15,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	border-radius: 20px;
-	width: 700px;
+	width: 600px;
 	padding: 50px;
 	align-self: center;
+	align-items: center;
+	align-content: space-around;
 }
 .row {
 	display: flex;
@@ -28,10 +30,17 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	/* border-radius: 20px;
+	background-color: lightcoral; */
+}
+/* .col1 {
+	border-radius: 50px;
+	background-color:white;
+} */
 }
 .container > .row {
 	width: 100%;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 .profile-icon {
     border-radius: 50%;
@@ -65,6 +74,7 @@ body {
 	padding: 10px;
 	margin-top: 50px;
 	margin-bottom: -50px;
+	margin-left: 50px;
 	outline: none;
 }
 #strike-button:hover {

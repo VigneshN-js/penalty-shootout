@@ -57,7 +57,7 @@ var updateButtonText = () =>{
     }
 
 
-    button.textContent = `${toss === 1 ? team1.name:team2.name} penaltyshoot`;
+    button.textContent = `${toss === 1 ? team1.name:team2.name}  Penalty Shoot`;
 };
 
 // Function to update the teams name that are playing
@@ -80,7 +80,7 @@ var handleStrikeButtonClick = () =>{
  var runs = score[Math.floor(Math.random()*score.length)];
  console.log(runs);
 
- runs = runs === 5? "W": runs; // if run is 5 we mark it as a wicket
+ runs = runs === 1?"⚽": "❌"; 
  console.log(runs);
 
  // check which team is on strike
@@ -105,7 +105,7 @@ console.log("Calculate score method");
 
 return runs.map(num =>{
     
-return num =='W'? 0: num;
+return num =='❌'? 0: 1;
 
 }).reduce((total,num) => total + num
 
@@ -125,4 +125,4 @@ var updateRuns = () =>{
     team2.runs.forEach((run,index)=>{
         teamTwoRunsElement[index].textContent = run;
     });
-}
+};
